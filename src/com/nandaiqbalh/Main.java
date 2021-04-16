@@ -24,6 +24,24 @@ public class Main {
 
             System.out.print("\nPilihan anda [1-4] : ");
             pilihanUser = userInput.next();
+            switch (pilihanUser) {
+                case "1":
+                    System.out.println("\n\t================");
+                    System.out.println("\t==NAMA DAN NIM==");
+                    System.out.println("\t================");
+                    break;
+                case "2":
+                    // menu kedua
+                    break;
+                case "3":
+                    // menu ketiga
+                    break;
+                case "4":
+                    // menu keempat
+                    break;
+                default:
+                    System.err.println("Pilihan anda bukan 1-4!");
+            }
         }
     }
 }
