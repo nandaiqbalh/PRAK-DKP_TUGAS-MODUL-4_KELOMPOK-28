@@ -42,6 +42,7 @@ public class Main {
                 default:
                     System.err.println("Pilihan anda bukan 1-4!");
             }
+            isLanjutkan = getYesorNo("Apakah anda ingin kembali ke menu utama?");
         }
     }
 
