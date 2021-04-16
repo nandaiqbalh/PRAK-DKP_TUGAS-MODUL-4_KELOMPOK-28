@@ -44,4 +44,17 @@ public class Main {
             }
         }
     }
+
+    private static boolean getYesorNo(String message) {
+        Scanner terminalInput = new Scanner(System.in);
+        System.out.print("\n" + message + " (y/n)? ");
+        String pilihanUser = terminalInput.next();
+
+        while (!pilihanUser.equalsIgnoreCase("y") && !pilihanUser.equalsIgnoreCase("n")) {
+            System.err.println("Pilihan anda bukan y atau n");
+            System.out.print("\n" + message + " (y/n)? ");
+            pilihanUser = terminalInput.next();
+        }
+        return pilihanUser.equalsIgnoreCase("y");
+    }
 }
