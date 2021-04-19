@@ -1,6 +1,7 @@
 package com.nandaiqbalh;
 
 import java.util.Scanner;
+import com.nandaiqbalh.NamaDanNIM;
 
 public class Main {
 
@@ -26,10 +27,11 @@ public class Main {
             pilihanUser = userInput.next();
             switch (pilihanUser) {
                 case "1":
-                    System.out.println("\n\t================");
                     System.out.println("\t==NAMA DAN NIM==");
-                    System.out.println("\t================");
-                    break;
+
+                    // pemanggilan method lewat import
+                    NamaDanNIM.namaNIM();
+                    
                 case "2":
                     // menu kedua
                     break;
