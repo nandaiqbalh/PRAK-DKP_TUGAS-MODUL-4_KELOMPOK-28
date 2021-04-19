@@ -27,11 +27,11 @@ public class Main {
             pilihanUser = userInput.next();
             switch (pilihanUser) {
                 case "1":
-                    System.out.println("\t==NAMA DAN NIM==");
-
+                    System.out.println("");
+                    System.out.println("\t\t\t\t  NAMA DAN NIM");
                     // pemanggilan method lewat import
                     NamaDanNIM.namaNIM();
-                    
+
                 case "2":
                     // menu kedua
                     break;
